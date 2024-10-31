@@ -47,7 +47,7 @@ public class MaterialRepositoryCustomImpl implements MaterialRepositoryCustom{
             dateTime = dateTime.minusMonths(6);
         }
 
-        return QMaterialEntity.materialEntity.regi_date.after(dateTime);
+        return QMaterialEntity.materialEntity.regiDate.after(dateTime);
     }
 
     private BooleanExpression searchByLike(String searchBy, String searchQuery){ // 특정 조건 검색 "like" 이용
