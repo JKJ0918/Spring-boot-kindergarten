@@ -4,6 +4,7 @@ import com.kinder.kindergarten.DTO.MaterialFormDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(name="material_imgg")
@@ -25,7 +26,7 @@ public class MaterialImgEntity extends TimeEntity{
     private String material_repimgYn; // 대표 이미지 여부
 
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     @JoinColumn(name = "material_id") // 참조를 명확히 지정
     private MaterialEntity materialEntity;
 

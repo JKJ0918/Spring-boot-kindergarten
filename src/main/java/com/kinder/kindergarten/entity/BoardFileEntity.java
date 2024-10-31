@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Time;
 
@@ -12,6 +13,7 @@ import java.sql.Time;
 @Getter
 @Setter
 @ToString
+@Transactional
 public class BoardFileEntity extends TimeEntity {
 
   @Id
