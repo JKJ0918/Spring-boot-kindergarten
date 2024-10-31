@@ -1,0 +1,11 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™äÁ–üÿÿÿÿ
+t	java:S116'"XRename this field "BoardFileList" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¶İê8¶Œà¯­2
+n	java:S116)"RRename this field "FileIds" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ†»è8¶Œà¯­2
+i
+java:S1128"GRemove this unused import 'com.kinder.kindergarten.entity.BoardEntity'.(í–½şÿÿÿÿ8£å©°­2
+Z
+java:S1128"8Remove this unused import 'org.modelmapper.ModelMapper'.(ó¿Ôúÿÿÿÿ8ßå©°­2
+H
+java:S1128
+"+Remove this unused import 'java.util.Date'.(¸…¼ü8¬‡±°­2

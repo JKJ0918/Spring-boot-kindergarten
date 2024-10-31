@@ -1,0 +1,7 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™äÁ–üÿÿÿÿ8„˜×“¬2
+n	java:S116	"RRename this field "file_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó§œ8†˜×“¬2
+x	java:S116"WRename this field "orignal_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ŞÇøÿÿÿÿ8†˜×“¬2
+y	java:S116"XRename this field "modified_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†äÄşÿÿÿÿ8†˜×“¬2
+u	java:S116"TRename this field "file_path" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÃıˆúÿÿÿÿ8†˜×“¬2
+o	java:S116"TRename this field "main_file" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄéÙK8†˜×“¬2
