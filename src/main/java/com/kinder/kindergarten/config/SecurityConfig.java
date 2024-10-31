@@ -20,7 +20,6 @@ public class SecurityConfig {
                     .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
                     .requestMatchers("/**", "/board/**", "/item/**", "/images/**").permitAll()
                     .requestMatchers("/admin/**").hasRole("ADMIN")  //관리자 권한 접속 범위 설정
-                    //.requestMatchers("/board/delete/**").hasRole("USER") //유저 권한으로 삭제 가능하게
                     .anyRequest()
                     .authenticated()
             ).formLogin(formLoginCustomizer -> formLoginCustomizer

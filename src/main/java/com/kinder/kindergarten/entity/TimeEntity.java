@@ -19,9 +19,9 @@ public class TimeEntity {
 
   @CreatedDate
   @Column(updatable = false)
-  private LocalDateTime regiDate;
+  private LocalDateTime regi_date;
 
   @LastModifiedDate
-  private LocalDateTime modiDate;
+  private LocalDateTime modi_date;
 
 }

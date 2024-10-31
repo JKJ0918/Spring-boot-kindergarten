@@ -1,28 +1,22 @@
 package com.kinder.kindergarten.DTO;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter @Setter
+@Data
 public class ScheduleDTO {
 
   //기본키
-  private String scheduleId;
+  private String schedule_id;
 
   //일정 제목
-  private String scheduleTitle;
+  private String schedule_title;
 
   //일정 내용
-  private String scheduleContent;
+  private String schedule_content;
 
   //장소
   private String location;
 
-  private String start;       // schedule_time (시작)
-  private String end;         // schedule_time (종료)
-
-  public ScheduleDTO(String scheduleTitle,String start){
-    this.scheduleTitle = scheduleTitle;
-    this.start = start;
-  }
+  //시간
+  private String schedule_time;
 }
