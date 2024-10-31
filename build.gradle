@@ -5,12 +5,12 @@ buildscript {
 }
 plugins {
     id 'java'
-    // id 'war'
+    id 'war'
     id 'org.springframework.boot' version '3.2.10'
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
-group = 'com.kinder'
+group = 'org.zerock'
 version = '0.0.1-SNAPSHOT'
 
 
@@ -47,7 +47,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '3.2.4'
 
-    // providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // 모델 처리를 위한 라이브러리 (DTO와 엔티티간의 변환 처리용) -> config.RootConfig에 적용
@@ -56,9 +56,6 @@ dependencies {
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.1.0'
     // 타입리프 용 코드
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-
-    //Thymeleaf time-format Java8time
-    implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.4.RELEASE'
 
 
     implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"
@@ -75,14 +72,6 @@ dependencies {
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
 
     testImplementation("org.springframework.security:spring-security-test") // 시큐리티 테스트
-
-    //ulid 사용
-    implementation group: 'com.github.f4b6a3', name: 'ulid-creator', version: '5.1.0'
-
-    // Guava : google에서 제작한 캐시빌더
-    implementation group: 'com.google.guava', name: 'guava', version: '33.3.1-jre'
-
-
 
 
     // 외부 인증용 카카오, 구글,  네이버 등....
