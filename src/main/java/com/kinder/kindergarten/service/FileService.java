@@ -1,9 +1,6 @@
 package com.kinder.kindergarten.service;
 
-import com.github.f4b6a3.ulid.Ulid;
-import com.github.f4b6a3.ulid.UlidCreator;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Value;
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -11,41 +8,28 @@ import java.io.FileOutputStream;
 import java.util.UUID;
 
 @Service
-@Log4j2
+@Log
 public class FileService {
 
-  @Value("${uploadPath1}")
-  private String uploadPath;
-
-  public String uploadFile(String uploadPath, String originalName, byte[] fileData) throws Exception{
-    log.info("파일 업로드 - FileService.uploadFile()실행 ");
-    Ulid ulid = UlidCreator.getUlid();
-    String extension = originalName.substring(originalName.lastIndexOf("."));
-    String modifiedName = ulid.toString() + extension;
-    String filePath = uploadPath + "/" + modifiedName;
-    //실제로 파일경로에 저장
-    FileOutputStream fos = new FileOutputStream(filePath);
-    fos.write(fileData);
-    fos.close();
-
-    return modifiedName;
-  }
-
-  public void deleteFile(String filePath) throws Exception {
-    File deleteFile = new File(filePath);
-
-    if(deleteFile.exists()) {
-      deleteFile.delete();
-      log.info("파일을 삭제하였습니다.");
-    } else {
-      log.info("파일이 존재하지 않습니다.");
+    public String uploadFile(String uploadPath, String originalFileName, byte[] fileData) throws Exception{
+        UUID uuid = UUID.randomUUID();                                      // 랜덤 파일명 생성
+        String extension = originalFileName.substring(originalFileName.lastIndexOf(".")); // 확장자
+        String savedFileName = uuid.toString() + extension;                 //  uuid+원래파일명 결합
+        String fileUploadFullUrl = uploadPath + "/" + savedFileName;        // 경로 추가
+        FileOutputStream fos = new FileOutputStream(fileUploadFullUrl);
+        fos.write(fileData);                                                // 파일 저장
+        fos.close();                                                        // 닫고
+        return savedFileName;                                               // 파일명 리턴
     }
-  }
 
-
-  public String getFullPath(String filename) {
-    return uploadPath + "/" + filename;
-  }
-//경로 가져오기
+    public void deleteFile(String filePath) throws Exception{  // 파일 삭제 메서드
+        File deleteFile = new File(filePath);
+        if(deleteFile.exists()) {
+            deleteFile.delete();
+            log.info("파일을 삭제하였습니다.");
+        } else {
+            log.info("파일이 존재하지 않습니다.");
+        }
+    }
 
 }

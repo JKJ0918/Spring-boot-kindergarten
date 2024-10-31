@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-  @GetMapping(value="/")
+  @GetMapping(value={"/main","/"})
     String main(){
     return "main";
     }
@@ -17,10 +17,4 @@ public class MainController {
   String login(){
     return "/member/login";
     }
-
-  //캘린더
-  @GetMapping(value = "/calendar")
-  public String showCalendar(){
-    return "calendar";
-  }
 }
