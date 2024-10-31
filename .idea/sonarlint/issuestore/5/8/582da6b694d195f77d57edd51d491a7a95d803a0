@@ -1,0 +1,8 @@
+
+c	java:S112±"FDefine and throw a dedicated exception instead of using a generic one.(×›´8ãÕ¿ä­2
+h	java:S112¬"FDefine and throw a dedicated exception instead of using a generic one.(ãÍžåüÿÿÿÿ8ˆÀÊä­2
+n	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ÏÔÚ8çÕ¿ä­2
+l
+java:S2259³"NA "NullPointerException" could be thrown; "originalFileName" is nullable here.(ê ‚8ËÖ¿ä­2
+a
+java:S1117·">Rename "uploadPath" which hides the field declared at line 55.(ûÑš‰üÿÿÿÿ8™×¿ä­2

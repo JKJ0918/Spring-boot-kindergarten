@@ -1,0 +1,9 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™äÁ–üÿÿÿÿ8Öø¨”¬2
+t	java:S116	"SRename this field "board_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼´êËøÿÿÿÿ8×ø¨”¬2
+w	java:S116"VRename this field "board_title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùõËıÿÿÿÿ8Øø¨”¬2
+y	java:S116"XRename this field "board_content" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Üø¸™ÿÿÿÿÿ8Øø¨”¬2
+v	java:S116"URename this field "board_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÀº¥ùÿÿÿÿ8Øø¨”¬2
+n	java:S116"RRename this field "file_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İó§œ8Øø¨”¬2
+u	java:S116"TRename this field "regi_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÂ€³üÿÿÿÿ8Øø¨”¬2
+u	java:S116 "TRename this field "modi_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ô³€ùÿÿÿÿ8ıè–¬2
