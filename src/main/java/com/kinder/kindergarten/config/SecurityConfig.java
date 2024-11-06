@@ -18,7 +18,7 @@ public class SecurityConfig {
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     return http.authorizeHttpRequests(authorizeHttpRequestsCustomizer -> authorizeHttpRequestsCustomizer
                     .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
-                    .requestMatchers("/**", "/board/**", "/item/**", "/images/**").permitAll()
+                    .requestMatchers("/**", "/board/**", "/item/**", "/images/**", "/material/**").permitAll()
                     .requestMatchers("/admin/**").hasRole("ADMIN")  //관리자 권한 접속 범위 설정
                     .anyRequest()
                     .authenticated()

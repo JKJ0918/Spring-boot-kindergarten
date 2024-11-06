@@ -27,5 +27,6 @@ public class ProjectMember {
 
     private String role; // 프로젝트 내 역할
     private LocalDateTime joinDate;
+    @Builder.Default
     private boolean isActive = true;
 }

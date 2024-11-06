@@ -18,6 +18,9 @@ public class FileService {
   @Value("${uploadPath1}")
   private String uploadPath;
 
+  @Value("${uploadPathMoney1}")
+  private String uploadPathMoney;
+
   public String getUploadPath() {
     return uploadPath;
   }
@@ -45,6 +48,11 @@ public class FileService {
     return uploadPath + filename;
   }
 
+
+  public String getFullPathMoney(String filename){
+    return uploadPathMoney + filename;
+  }
+
   // 디렉토리 생성
   public void createDirectory(String path) {
     File directory = new File(path);
@@ -70,6 +78,7 @@ public class FileService {
 
     return filename;
   }
+
   private String createFileName(String originalFilename) {
     String ext = extractExt(originalFilename);
     String uuid = UUID.randomUUID().toString();
