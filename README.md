@@ -48,10 +48,10 @@
 
 역할 : 회계, 자재의 내역을 엑셀 파일에 정리하여 사용자의 컴퓨터에 다운로드 시켜주는 기능
 
-![image](https://github.com/user-attachments/assets/95864dfe-0eb9-41c2-b421-4e6ad034f46d)
+![image](https://github.com/user-attachments/assets/483adc42-1d21-423e-b915-7aa5a9420202)
 
 핵심 코드 : Service 에서 ByteArrayOutputStream 클래스를 이용하여 엑셀 파일을 바이트로 반환 후 Controller 에서 HttpHeaders 를 통해
-파일이 생성되자 마자 즉시 클라이언트에 전송 될 수 있도록 구현됨
+서버에 저장 없이 클라이언트에 전송 될 수 있도록 구현됨. 
      
 2. 금전 수입/지출 내역을 그래프를 이용여 도식화
 
