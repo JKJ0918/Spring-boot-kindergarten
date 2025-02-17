@@ -1,7 +1,9 @@
 ### ■ 프로젝트명
 스프링부트 팀프로젝트 유치원ERP
 
-웹페이지 접속 URL : http://mbc-webcloud.iptime.org:8002/
+웹페이지 접속 URL : mbc-webcloud.iptime.org:8002/main/login
+
+발표 PPT링크 : https://docs.google.com/presentation/d/1NkOfpaqlskkg-GLwSvNfILGFfKBoBLIhWDCPaOM8BY4/edit?usp=sharing
 
 원본 레포지토리 : https://github.com/AHJ2616/Spring-boot-kindergarten
 
@@ -32,8 +34,16 @@
 
 ▶ 회원(원생, 학부모) 관리 페이지 : 유치원 원생, 학부모를 관리 하는 페이지. (원생 등록, 상세보기, 수정, 삭제), 반 배정 기능 등 원생관리에 필요한 역할을 함
 
-### :pencil2: 주요기능 - 자재/회계 관리(프로젝트에 기여한 내용)
+### :pencil2: 프로젝트에 기여한 내용 - 자재/회계 관리
 
 - 데이터 베이스 설계(ERD)
 ![image](https://github.com/user-attachments/assets/51c0c088-7d79-4c99-bb8a-99f0f94e5285)
 : 자재 관리, 회계 관리 테이블 분리하여 데이터 관리
+
+- 핵심 기능
+: 과거 전 직장에서 근무하며, 느꼈던 데이터 취합이나 문서 정리시 있었으면 좋았을 부분을 아이디어로 기반하여 기능을 추가함
+  1. 목록 엑셀 출력 기능 구현
+
+     
+  2. 금전 수입/지출 내역을 그래프를 이용여 도식화
+
