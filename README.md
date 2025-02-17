@@ -1,7 +1,7 @@
 ### ■ 프로젝트명
 스프링부트 팀프로젝트 유치원ERP
 
-웹페이지 접속 URL : mbc-webcloud.iptime.org:8002/
+웹페이지 접속 URL : http://mbc-webcloud.iptime.org:8002/
 
 원본 레포지토리 : https://github.com/AHJ2616/Spring-boot-kindergarten
 
